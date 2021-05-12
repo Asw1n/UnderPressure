@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sensor hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   <h1>WiFi configuration</h1>
+  <p>
+    <form action="/wifi">
+  <table>
+    <tr><th colspan=2 class="title">Station</th></tr>
+    <tr><th>SSID</th><td ><input  name="ssid_station" value=%ssid_station%></td></tr>
+    <tr><th>Password</th><td><input  name="pw_station" value=%pw_station%></td></tr>
+    <tr><th colspan=2 class="title">Access point</th></tr>
+    <tr><th>SSID</th><td ><input  name="ssid_ap" value=%ssid_ap%></td></tr>
+    <tr><th>Password</th><td><input  name="pw_ap" value=%pw_ap%></td></tr>
+    <tr><td colspan=2 class="bottom"><input type="submit" value="Save"></td></tr>
+  </table>
+</form>
+</p>
+
+<p>
+Sensorhub will first try to connect to a network as a station. If that fails, or if no SSID is supplied, Sensorhub will create an access point.
+</p>
+
+</body>
+
+</html>

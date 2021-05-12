@@ -1,0 +1,28 @@
+/* Palette based on RAL5024 
+   #6093ac, #354954, # 99aebb, #a5829, #70506b
+*/
+
+
+html {
+  font-family: Helvetica;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+h1{
+  padding: 2vh;
+}
+p{
+  font-size: 1.5rem;
+}
+
+body{ background-color: #6093AC ; color: #354945}
+
+
+ td.text {text-align:left; ;}
+ td.number {text-align:left;}
+ th {text-align:left;}
+ th.title {text-align:center; background-color: #99aebb;}
+ td.bottom {text-align:center; background-color: #99aebb;}
+ table { margin-left: auto; margin-right: auto;border: 1px solid #354945 ;border-collapse: collapse;box-shadow: 5px 5px 7px 0px #354945;background-color: #ffffff;}
+ th, td { padding-right: 10px;padding-left: 10px;border: 1px solid #354945;}

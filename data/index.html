@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sensor hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   <h1>Calibration</h1>
+  <p>
+    <form action="/cal_pres">
+  <table>
+    <tr><th colspan=2 class="title">Pressure</th></tr>
+    <tr><th>Unit</th><td class="text">mBar</td></tr>
+    <tr><th>Raw</th><td  class="number">%PRES_RAW%</td></tr>
+    <tr><th>Offset</th><td  class="number">%PRES_OFFSET%</td></tr>
+    <tr><th>Calibrated</th><td  class="number">%PRES_CAL%</td></tr>
+    <tr><th>Reference</th><td><input pattern="^\d*(\.\d{0,2})?$" name="pressure"></td></tr>
+    <tr><td colspan=2 class="bottom"><input type="submit" value="Calibrate"></td></tr>
+  </table>
+</form>
+</p>
+
+<p>
+  <form action="/cal_temp">
+<table>
+  <tr><th colspan =2" class="title">Temperature</th></tr>
+  <tr><th>Unit</th><td class="text">Celcius</td></tr>
+  <tr><th>Raw</th><td  class="number">%TEMP_RAW%</td></tr>
+  <tr><th>Offset</th><td  class="number">%TEMP_OFFSET%</td></tr>
+  <tr><th>Calibrated</th><td  class="number">%TEMP_CAL%</td></tr>
+  <tr><th>Reference</th><td><input pattern="^\d*(\.\d{0,2})?$" name="temperature"></td></tr>
+  <tr><td colspan=2 class="bottom"><input type="submit" value="Calibrate"></td></tr>
+</table>
+</form>
+</p>
+
+</body>
+
+</html>

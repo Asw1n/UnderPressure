@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "UnderPressure",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"functional": "cpp"
+		}
+	}
+}
